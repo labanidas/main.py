@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/main.css" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <title>New Chat</title>
+  </head>
+  <body class="bg-chatblack-50">
+    <div class="flex h-[100vh] text-white">
+      <!-- *******************************left part ****************************************** -->
+      <div class="left bg-sidebar-50 w-2/12">
+        <button
+          class="new-chat p-3 border-white border rounded-md flex m-2 space-x-2 w-[90%] hover:bg-sidebar-20 items-center"
+        >
+          <svg
+            stroke="currentColor"
+            fill="none"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="h-4 w-4 shrink-0"
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+          </svg>
+          <span>New Chat</span>
+        </button>
+
+        <!--*********************************** all chats******************************************** -->
+        <div class="chats my-4">
+          <div
+            class="chat flex items-center rounded-md hover:bg-sidebar-20 p-3 m-2 space-x-2 w-[90%] bg-sidebar-20"
+          >
+            <svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="h-4 w-4"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+              ></path>
+            </svg>
+            <span>Cloning ChatGPT</span>
+          </div>
+
+          <div
+            class="chat flex items-center rounded-md hover:bg-sidebar-20 p-3 m-2 space-x-2 w-[90%]"
+          >
+            <svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="h-4 w-4"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+              ></path>
+            </svg>
+            <span>Sleep Schedule</span>
+          </div>
+        </div>
+      </div>
+      <!-- ******************************************* right part *************************** -->
+      <div class="right w-10/12 flex justify-center items-center flex-col">
+        <div class="text-center w-full text-4xl font-bold my-20">ChatGPT</div>
+        <div class="question-items flex justify-around py-10">
+          <div class="flex flex-col">
+            <button
+              class="left-ques text-left bg-gray-600 hover:bg-gray-700 py-2 px-4 m-2 rounded-md w-[30vw] text-sm"
+            >
+              <p class="font-bold">Come up with concepts</p>
+              <p>for a retro-style arcade game</p>
+            </button>
+            <button
+              class="left-ques text-left bg-gray-600 hover:bg-gray-700 py-2 px-4 m-2 rounded-md w-[30vw] text-sm"
+            >
+              <p class="font-bold">Write a text</p>
+              <p>inviting my neighbors to a barbecue</p>
+            </button>
+          </div>
+
+          <div class="flex flex-col">
+            <button
+              class="right-ques text-left bg-gray-600 hover:bg-gray-700 py-2 px-4 m-2 rounded-md w-[30vw] text-sm"
+            >
+              <p class="font-bold">Suggest fun activities</p>
+              <p>for a family of 4 to do indoors on a rainy day</p>
+            </button>
+            <button
+              class="right-ques text-left bg-gray-600 hover:bg-gray-700 py-2 px-4 m-2 rounded-md w-[30vw] text-sm"
+            >
+              <p class="font-bold">Explain options trading</p>
+              <p>if I'm familiar with buying and selling stocks</p>
+            </button>
+          </div>
+        </div>
+
+        <!-- ****************input div ************************************************* -->
+        <div class="input w-full text-center my-15">
+          <input
+            class="w-[70%] py-4 bg-gray-600 rounded-md p-4"
+            type="text"
+            name="text"
+            placeholder="Send a message"
+          />
+          <button class="relative -left-[2rem]">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              fill="none"
+              class="h-4 w-4 m-1 md:m-0"
+              stroke-width="2"
+            >
+              <path
+                d="M.5 1.163A1 1 0 0 1 1.97.28l12.868 6.837a1 1 0 0 1 0 1.766L1.969 15.72A1 1 0 0 1 .5 14.836V10.33a1 1 0 0 1 .816-.983L8.5 8 1.316 6.653A1 1 0 0 1 .5 5.67V1.163Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </button>
+          <p class="footer-text text-xs m-2 opacity-70">
+            Free Research Preview. ChatGPT may produce inaccurate information
+            about people, places, or facts.
+            <a
+              class="underline"
+              target="_blank"
+              href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+            >
+              ChatGPT August 3 Version
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
