@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
     <title>New Chat</title>
     <style>
-      .right1 {
+      .right2 {
         display: none;
       }
     </style>
@@ -121,13 +121,14 @@
 
         <!-- ****************input div ************************************************* -->
         <div class="input w-full text-center my-15">
-          <input
+          <input          
+            id="questionInput"
             class="w-[70%] py-4 bg-gray-600 rounded-md p-4"
             type="text"
             name="text"
             placeholder="Send a message"
           />
-          <button  class="relative -left-[2rem]">
+          <button  id="sendButton" class="relative -left-[2rem]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 16"
@@ -159,13 +160,13 @@
       <div
         class="right2 w-10/12 flex justify-center items-center flex-col h-fit"
       >
-        <div class="box box1 flex justify-start w-[70%] space-x-4 p-7">
+        <div class="box box1 flex justify-start w-[70%] space-x-4 p-7 m-auto">
           <img
             class="w-9 h-9"
             src="https://chat.openai.com/_next/image?url=https%3A%2F%2Flh3.googleusercontent.com%2Fa%2FAAcHTtf-3pmhALVSb-1WbSusjdPg_2UhrsZ-k88Nr8nRNUWOvZ0%3Ds96-c&w=48&q=75"
             alt="user"
           />
-          <div >
+          <div id="question">
             In this corrected code: The tag is self-closed with a trailing slash
             / before the closing angle bracket >. The alt attribute has been
             provided with the text value "ChatGPT," which is a brief description
@@ -200,13 +201,12 @@
         <!-- ****************input div ----right2************************************************* -->
         <div class="input w-full text-center my-[10%]">
           <input
-            id="question"
             class="w-[70%] py-4 bg-gray-600 rounded-md p-4"
             type="text"
             name="text"
             placeholder="Send a message"
           />
-          <button id="sendButton" class="relative -left-[2rem]">
+          <button class="relative -left-[2rem]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 16"
