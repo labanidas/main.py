@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
     <title>New Chat</title>
     <style>
-      .right2 {
+      .right1 {
         display: none;
       }
     </style>
@@ -121,14 +121,14 @@
 
         <!-- ****************input div ************************************************* -->
         <div class="input w-full text-center my-15">
-          <input          
+          <input
             id="questionInput"
             class="w-[70%] py-4 bg-gray-600 rounded-md p-4"
             type="text"
             name="text"
             placeholder="Send a message"
           />
-          <button  id="sendButton" class="relative -left-[2rem]">
+          <button id="sendButton" class="relative -left-[2rem]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 16"
@@ -158,55 +158,55 @@
 
       <!-- ******************************************* right part --------msg inbox*************************** -->
       <div
-        class="right2 w-10/12 flex justify-center items-center flex-col h-fit"
+        class="right2 w-10/12 flex items-center flex-col h-fit relative h-[100%]"
       >
-        <div class="box box1 flex justify-start w-[70%] space-x-4 p-7 m-auto">
-          <img
-            class="w-9 h-9"
-            src="https://chat.openai.com/_next/image?url=https%3A%2F%2Flh3.googleusercontent.com%2Fa%2FAAcHTtf-3pmhALVSb-1WbSusjdPg_2UhrsZ-k88Nr8nRNUWOvZ0%3Ds96-c&w=48&q=75"
-            alt="user"
-          />
-          <div id="question">
-            In this corrected code: The tag is self-closed with a trailing slash
-            / before the closing angle bracket >. The alt attribute has been
-            provided with the text value "ChatGPT," which is a brief description
-            of the image and is used for accessibility purposes.
-          </div>
-        </div>
-        <div class="bg-gray-600 w-full bg">
-          <div class="box box2 flex justify-start w-[70%] space-x-4 p-7 m-auto">
+        <div class="allchats h-[500px] overflow-y-auto">
+          <div
+            class="box user box1 flex justify-start w-[70%] space-x-4 p-7 m-auto"
+          >
             <img
               class="w-9 h-9"
-              src="https://chat.openai.com/favicon.ico"
-              alt="ChatGPT"
+              src="https://chat.openai.com/_next/image?url=https%3A%2F%2Flh3.googleusercontent.com%2Fa%2FAAcHTtf-3pmhALVSb-1WbSusjdPg_2UhrsZ-k88Nr8nRNUWOvZ0%3Ds96-c&w=48&q=75"
+              alt="user"
             />
-            <div class="flex flex-col">
-              <div>
-                If the image is not displaying, there could be several reasons
-                for it. Here are some common troubleshooting steps to resolve
-                the issue: Check the File Path: Ensure that the src attribute in
-                the t the image dimensions are appropriate for your layout. Ad
-                Blockers: Browser extensions or ad blockers can sometimes
-                interfere with the loading of images. Try disabling such
-                extensions temporarily to see if they are causing the issue. By
-                systematically checking these factors, you should be able to
-                identify and resolve the issue preventing the image from
-                displaying..
+            <div id="question">
+              In this corrected code: The tag is self-closed with a trailing
+              slash / before the closing angle bracket >. The alt attribute has
+              been provided with the text value "ChatGPT," which is a brief
+              description of the image and is used for accessibility purposes.
+            </div>
+          </div>
+          <div class="bg-gray-600 w-full bg chatgpt">
+            <div
+              class="box box2 flex justify-start w-[70%] space-x-4 p-7 m-auto"
+            >
+              <img
+                class="w-9 h-9"
+                src="https://chat.openai.com/favicon.ico"
+                alt="ChatGPT"
+              />
+              <div class="flex flex-col">
+                <div>
+                  If the image is not displaying, there could be several reasons
+                  for it. Here are some common troubleshooting steps to resolve
+                  the issue: Check the File Path: Ensure that the src attribute
+                  in the t the image dimensions are appropriate for your layout.
+                </div>
               </div>
-              <div>Loading...</div>
             </div>
           </div>
         </div>
 
         <!-- ****************input div ----right2************************************************* -->
-        <div class="input w-full text-center my-[10%]">
+        <div class="input w-full text-center  absolute top-[90%]  py-4 mt-[50px] ">
           <input
+            id="questionInput2"
             class="w-[70%] py-4 bg-gray-600 rounded-md p-4"
             type="text"
             name="text"
             placeholder="Send a message"
           />
-          <button class="relative -left-[2rem]">
+          <button id="askQuestion" class="relative -left-[2rem]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 16"
@@ -234,6 +234,7 @@
         </div>
       </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="/static/js/script.js"></script>
   </body>
 </html>
