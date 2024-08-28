@@ -22,8 +22,8 @@ Sometimes, pages load content dynamically using JavaScript. To determine if a pa
   3. Reload the page and check if the content is still visible.
 
 - **Enable Caching**:
-  - In the Developer Tools, go to the "Network" tab.
-  - Check the "Disable cache" option and reload the page to observe the requests.
+  1. In the Developer Tools, go to the "Network" tab.
+  2. Press `Ctrl + Shift + P` and search for "Enable JavaScript."
 
 For a visual explanation, watch this video:
 - **Video Tutorial**: [How to Check if a Page Renders Using JavaScript](https://www.youtube.com/watch?v=Pu3gmdWsLYc)
