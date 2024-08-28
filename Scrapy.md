@@ -10,6 +10,8 @@ For a brief comparison of other popular scraping tools like Beautiful Soup, Scra
 Before diving into dynamic content, it's essential to get familiar with Scrapy, a powerful and versatile web scraping framework. Begin by following the official Scrapy tutorial:
 
 - **Scrapy Official Tutorial**: [Scrapy Documentation](https://docs.scrapy.org/en/latest/intro/tutorial.html)
+ For a visual explanation, watch this video:
+- **Video Tutorial**: [Web Scraping using Scrapy](https://www.youtube.com/watch?v=GogxAQ2JP4A)
 
 ## Handling Dynamic Pages
 
