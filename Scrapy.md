@@ -2,7 +2,9 @@
 
 This guide will walk you through the basic steps of web scraping with Scrapy, including how to handle pages that render dynamically using JavaScript. The resources provided will help you get started with Scrapy and teach you how to scrape dynamic content effectively.
 
-Here's a brief different on other scraping tools - Beautiful Soup or Scrapy or Selenium [https://www.youtube.com/watch?v=-qRLWOtn_Kc]
+For a brief comparison of other popular scraping tools like Beautiful Soup, Scrapy, and Selenium, check out this video: [Beautiful Soup vs. Scrapy vs. Selenium](https://www.youtube.com/watch?v=-qRLWOtn_Kc).
+
+
 ## Getting Started with Scrapy
 
 Before diving into dynamic content, it's essential to get familiar with Scrapy, a powerful and versatile web scraping framework. Begin by following the official Scrapy tutorial:
