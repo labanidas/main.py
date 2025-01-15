@@ -15,6 +15,8 @@
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Chart.js for graphs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
     <!-- Header Include -->
@@ -78,7 +80,8 @@
 
           <!-- Marks Analysis Section -->
           <div id="marks-analysis" class="nav-section content-section">
-            marks analysis
+            <h2>Marks Analysis</h2>
+            <canvas id="marksGraph" width="400" height="150"></canvas>
           </div>
 
           <!-- Add Student Form -->
