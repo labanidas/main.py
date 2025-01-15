@@ -22,7 +22,7 @@ $(document).ready(function () {
 
     // Make the POST request to the backend
     $.ajax({
-      url: "http://localhost:8000/cgi-bin/register.py", // Form action URL
+      url: "http://localhost:8000/cgi-bin/register.py", 
       type: "POST",
       data: formData,
       success: function (response) {
