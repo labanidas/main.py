@@ -1,6 +1,4 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    padding: 20px;
-    background-color: #f4f4f4;
+html, body, * {
+    margin:0px;
+    padding: 0px;
 }
