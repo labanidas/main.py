@@ -7,7 +7,7 @@ Make sure you have the following installed:
 - pip (Python package manager)  
 
 ### Home Page 
-![Home Page](screenshots/home-page.png "EduVault Home Page")  
+![Home Page](screenshots/home.png "EduVault Home Page")  
 
 ### Login Page  
 ![Login Page](screenshots/login.png "EduVault Login Page")  
