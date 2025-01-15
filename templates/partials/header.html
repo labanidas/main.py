@@ -8,8 +8,12 @@
             <span class="text-white ms-3 h4">EduVault</span>
         </div>
 
-        <!-- Login Button -->
-        <a href="/templates/login.html" class="btn btn-light">Login</a>
+        <!-- Buttons (Login, Sign Up, Logout) -->
+        <div class="">
+            <a href="/templates/login.html" class="btn btn-light" id="loginBtn">Login</a>
+            <a href="/templates/signup.html" class="btn btn-light ms-2" id="signupBtn">Sign Up</a>
+            <a href="#" class="btn btn-danger ms-2" id="logoutBtn" style="display: none;">Logout</a>
+        </div>
     </div>
 </header>
 
@@ -18,6 +22,8 @@
         max-width: 100%;
         height: auto;
         object-fit: contain;
-        width: 40px; /* Adjust width as per the required size */
+        width: 40px; 
     }
 </style>
+
+<script src="../../static/js/header.js"></script>

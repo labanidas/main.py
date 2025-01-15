@@ -1,40 +1,38 @@
 import sqlite3
 import cgi
 import os
-import subprocess
+import json
 
-print("Content-Type: text/html\n")
+print("Content-Type: application/json\n")
 
 form = cgi.FieldStorage()
 username = form.getvalue('username')
 password = form.getvalue('password')
 
-# Define the database path
-db_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../db/database.db'))
+# Initialize response
+response = {"status": "failure", "message": "Unknown error"}
 
-# Check if the database file exists
-if not os.path.exists(db_path):
-    # Initialize the database by executing init_db.py
-    init_script_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../db/init_db.py'))
-    try:
-        subprocess.run(["python", init_script_path], check=True)
-        print("<p>Database initialized successfully.</p>")
-    except subprocess.CalledProcessError as e:
-        print(f"<p>Error initializing database: {e}</p>")
-        exit()
+db_path = os.getcwd() + "/db/users.db"
 
-# Connect to the database
-try:       
-    conn = sqlite3.connect(db_path)
-    cursor = conn.cursor()
+conn = sqlite3.connect(db_path)
+cursor = conn.cursor()
 
-    cursor.execute("SELECT * FROM users WHERE username=? AND password=?", (username, password))
-    user = cursor.fetchone()
-    conn.close()
+cursor.execute('''
+CREATE TABLE IF NOT EXISTS users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    username TEXT UNIQUE NOT NULL,
+    password TEXT NOT NULL
+)
+''')
 
-    if user:
-        print("<html><body>Login successful! <a href='/templates/dashboard.html'>Go to Dashboard</a></body></html>")
-    else:
-        print("<html><body>Invalid credentials! <a href='/templates/login.html'>Try Again</a></body></html>")
-except sqlite3.Error as e:
-    print(f"<p>Database error: {e}</p>")
+cursor.execute("SELECT * FROM users WHERE username=? AND password=?", (username, password))
+
+user = cursor.fetchone()
+
+if user:
+    response["status"] = "success"
+else:
+    response["message"] = "Invalid credentials. Please try again."
+conn.close()
+
+print(json.dumps(response))
