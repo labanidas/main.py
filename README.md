@@ -106,19 +106,25 @@ evaluation metric (e.g. intersection over union).
 
 
 
-Here's a polished version of your README:
+Here’s the updated README with the clone step included:
 
 ---
 
 # Project Setup Guide
 
-Follow the steps below to get your environment up and running:
+## Step 1: Clone the Repository
 
-## Step 1: Install Python 3.7.0
+Clone the project from the `ESD` branch:
+
+```bash
+git clone --branch ESD https://github.com/labanidas/main.py.git
+```
+
+## Step 2: Install Python 3.7.0
 
 Ensure that Python 3.7.0 is installed on your system. If you don’t have it yet, download and install it from the official [Python website](https://www.python.org/downloads/release/python-370/).
 
-## Step 2: Create a Virtual Environment
+## Step 3: Create a Virtual Environment
 
 Create a virtual environment to manage project dependencies separately:
 
@@ -138,7 +144,7 @@ Activate the virtual environment:
   source venv/bin/activate
   ```
 
-## Step 3: Install Dependencies
+## Step 4: Install Dependencies
 
 Install the necessary project dependencies:
 
@@ -146,7 +152,7 @@ Install the necessary project dependencies:
 pip install -r requirements.txt
 ```
 
-## Step 4: Run the Application
+## Step 5: Run the Application
 
 Finally, start the application:
 
@@ -155,5 +161,3 @@ python app.py
 ```
 
 ---
-
-This layout is clear, concise, and professional, with distinct steps for better readability.
