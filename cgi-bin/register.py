@@ -3,7 +3,7 @@ import cgi
 import os
 import json
 
-print("Content-Type: application/json\n")  # Set the response type to JSON
+print("Content-Type: application/json\n") 
 
 # Get form data
 form = cgi.FieldStorage()
