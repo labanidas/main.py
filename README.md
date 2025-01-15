@@ -7,25 +7,25 @@ Make sure you have the following installed:
 - pip (Python package manager)  
 
 ### Home Page 
-![Home Page](assets/screenshots/home-page.png "EduVault Home Page")  
+![Home Page](screenshots/home-page.png "EduVault Home Page")  
 
 ### Login Page  
-![Login Page](assets/screenshots/login.png "EduVault Login Page")  
+![Login Page](screenshots/login.png "EduVault Login Page")  
 
 ### Register Page  
-![Register Page](assets/screenshots/register.png "EduVault Register Page")
+![Register Page](screenshots/register.png "EduVault Register Page")
 
 ### Dashboard Page  
-![Dashboard Page](assets/screenshots/dashboard.png "Dashboard Page")  
+![Dashboard Page](screenshots/dashboard.png "Dashboard Page")  
 
 ### Student Data Entry  
-![Data Entry Page](assets/screenshots/add.png "Student Data Entry ")  
+![Data Entry Page](screenshots/add.png "Student Data Entry ")  
 
 ### Graph
-![Graph Page](assets/screenshots/graph.png "Graph")  
+![Graph Page](screenshots/graph.png "Graph")  
 
 ### Edit Student
-![Edit Page](assets/screenshots/edit.png "Edit Page")  
+![Edit Page](screenshots/edit.png "Edit Page")  
 
 ---
 
