@@ -19,6 +19,7 @@ $(document).ready(function () {
           $("#studentName").val(response.message.name);
           $("#rollNumber").val(response.message.roll);
           $("#marks").val(response.message.marks);
+          $("#id").val(response.message.id);
         } else {
           alert("Error: " + response.message);
         }
@@ -38,6 +39,7 @@ $(document).ready(function () {
         name: $("#studentName").val(),
         roll: $("#rollNumber").val(),
         marks: $("#marks").val(),
+        id: $("#id").val()
     };
     $.ajax({
       url: "http://localhost:8000/cgi-bin/student-crud/edit.py",
@@ -45,7 +47,7 @@ $(document).ready(function () {
       data: formData,
       success: function (response) {
         if (response.status === "success") {
-            window.location.href = "/index.html";
+            window.location.href = "/templates/dashboard.html";
         }else{
         $("#errorMessage").text(response.message);
           $("#errorModal").modal("show");

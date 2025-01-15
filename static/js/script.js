@@ -1,4 +1,10 @@
 $(document).ready(function () {
+
+  var currentUser = localStorage.getItem("username");
+  if (!currentUser){
+    window.location.href = "../index.html";
+  }
+
   // Hide all nav sections and show the "All Students" section by default
   $(".nav-section").hide();
   $("#all-students").show();

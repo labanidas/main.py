@@ -19,5 +19,5 @@ $(document).ready(function() {
 
 function destroySessionAndRedirect() {
     localStorage.removeItem("username");
-    window.location.href = window.location.href;
+    window.location.href = "../index.html";
 }

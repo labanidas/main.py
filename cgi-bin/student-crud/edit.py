@@ -11,6 +11,7 @@ form = cgi.FieldStorage()
 name = form.getvalue('name')
 roll = form.getvalue('roll')
 marks = form.getvalue('marks')
+id = form.getvalue('id')
 
 if not name or not roll or not marks:
     response["message"] = "Missing required fields"
@@ -23,8 +24,8 @@ conn = sqlite3.connect(db_path)
 cursor = conn.cursor()
 
 cursor.execute(
-    "UPDATE students SET name = ?, marks = ? WHERE roll = ?",
-    (name, marks, roll)
+    "UPDATE students SET name = ?, marks = ?, roll = ? WHERE id = ?",
+    (name, marks, roll, id)
 )
 
 conn.commit()

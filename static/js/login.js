@@ -15,7 +15,7 @@ $(document).ready(function () {
       success: function (response) {
         if (response.status === "success") {
           localStorage.setItem("username", username);
-          window.location.href = "/index.html";
+          window.location.href = "/templates/dashboard.html";
         } else {
           $("#errorMessage").text(response.message);
           $("#errorModal").modal("show");
