@@ -48,7 +48,7 @@ Make sure you have the following installed:
 1. **Clone the Repository**  
    ```bash
     git clone --branch python-cgi-crud-app https://github.com/yourusername/eduvault.git
-   cd eduvault
+   cd main.py
    ```  
 
 2. **Install Dependencies**  
